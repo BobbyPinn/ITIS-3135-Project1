@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Pichardo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="top">
+        <p class="logo">Jesus Pichardo</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hello, My name is Jesus Pichardo</h1>
+            <p>I am a senior Computer Science student at UNCC and IT intern based in Charlotte</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p> I know how to code in Java and I have some experience with C++, SQL, HTML, CSS, Javascript and Typescript.
+                A little more about me personally is I like to rock climb, play basketball, and go to the gym.
+            </p>
+            <p>I enjoy building web apps to solve everdya problems and after graduating I plan to work as a softare engineer</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <a href="mailto:JesusPichardo.JSP@gmail.com">JesusPichardo.JSP@gmail.com</a>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required minlength="2">
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Choose one</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="span">
+                    <label for="message"Message</label>
+                    <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/BobbyPinn?tab=repositories" class="btn">Github</a>
+        <a href="https://www.linkedin.com/in/jesus-pichardo-/" class="btn">LinkedIn</a>
+        <p>&copy; 2026 Jesus Pichardo</p>
+    </footer>
+</body>
+</html>
