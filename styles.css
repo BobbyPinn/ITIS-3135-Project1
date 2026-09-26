@@ -1,8 +1,8 @@
 :root {
-    --primary: hsl(215, 70%, 25%);
-    --secondary: hsl(215, 70%, 40%);
-    --accent: hsl(30, 95%, 55%);
-    --neutral: hsl(215, 30%, 98%);
+    --primary: hsl(215, 56%, 49%);
+    --secondary: hsl(215, 61%, 58%);
+    --accent: hsl(49, 71%, 61%);
+    --neutral: hsl(199, 44%, 93%);
     --black: hsl(215, 30%, 8%);
     --black-75: hsl(215, 30%, 8%, .75);
     --h1: 2.488rem;
@@ -118,12 +118,27 @@ footer a:hover {
 .hero {
     background-color: var(--primary);
     color: var(--neutral);
-    padding: 3rem 2rem;
+    padding: 3rem 1.5rem;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1.5rem;
+}
+
+.hero-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var (--accent);
 }
 
 /*Buttons */
@@ -265,6 +280,17 @@ form .btn {
         gap: 2rem;
     }
 
+    .hero {
+        flex-direction:  row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .hero-img {
+        width: 250px;
+        height: 250px;
+    }
     .hero, main > h1, .projects {
         grid-column: 1 / -1;
     }
