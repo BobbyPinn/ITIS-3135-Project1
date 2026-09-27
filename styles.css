@@ -175,6 +175,7 @@ footer a:hover {
     font-weight: 600;
     padding: .6em 1.5em;
     border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn:hover {
@@ -318,7 +319,13 @@ form .btn {
     .hero-img {
         width: 250px;
         height: 250px;
+        transition: transform .3s ease;
     }
+
+     .hero-img:hover {
+        transform: scale(1.05) rotate(2deg);
+    }
+
     .hero, main > h1, .projects {
         grid-column: 1 / -1;
     }
@@ -349,8 +356,22 @@ form .btn {
 
     .project:hover {
         transform: translateY(-6px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0,2);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
-    
+    @keyframes fade-up {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0);}
+    }
+
+    .hero, #about, #contact, .project {
+        animation: fade-up 0.6s ease backwards;
+    }
+
+    #about { animation-delay: .15s; }
+    #contact { animation-delay: .3s; }
+    .project:nth-child(2) {animation-delay: .1s; }
+    .project:nth-child(3) {animation-delay: .2s; }
+    .project:nth-child(4) {animation-delay: .3s; }
+    .project:nth-child(5) {animation-delay: .4s; }
 }
