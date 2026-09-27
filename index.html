@@ -12,7 +12,7 @@
         <p class="logo">Jesus Pichardo</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li ><a href="index.html">Home</a></li>
                 <li><a href="project.html">Projects</a></li>
             </ul>
         </nav>
@@ -31,9 +31,9 @@
         <section id="about">
             <h2>About Me</h2>
             <p>I know how to code in Java and I have some experience with C++, SQL, HTML, CSS, JavaScript and Typescript.
-                I enjoy building web apps to solve everday problems and after graduating I plan to work as a software engineer
+                I enjoy building web apps to solve everyday problems and after graduating I plan to work as a software engineer
             </p>
-            <p>I am currently working as an IT Inter at Huber Engineered Woods</p>
+            <p>I am currently working as an IT Intern at Huber Engineered Woods</p>
             <p> A little more about me personally is I like to rock climb, play basketball, and watch anime.</p>
         </section>
 
@@ -46,6 +46,10 @@
                     <input type="text" id="name" name="name" required minlength="2">
                 </div>
                 <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="span">
                     <label for="subject">Subject</label>
                     <select id="subject" name="subject" required>
                         <option value="" disabled selected>Choose one</option>
@@ -64,8 +68,14 @@
     </main>
 
     <footer>
-        <a href="https://github.com/BobbyPinn?tab=repositories" class="btn">Github</a>
-        <a href="https://www.linkedin.com/in/jesus-pichardo-/" class="btn">LinkedIn</a>
+        <div class="socials">
+            <a href="https://github.com/BobbyPinn?tab=repositories" class="social">
+                <img src="images/Github.png" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/jesus-pichardo-/" class="social">
+                <img src="images/InWhite.png" alt="GitHub" class="icon">
+            </a>
+        </div>
         <p>&copy; 2026 Jesus Pichardo</p>
     </footer>
 </body>
